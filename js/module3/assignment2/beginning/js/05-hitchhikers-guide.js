@@ -61,3 +61,6 @@ if(rate <= 5 || rate >= 1){
 }
 
 }//end else
+
+// TODO 
+// work on yes and rate??

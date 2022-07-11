@@ -31,3 +31,6 @@ let grade = Number(prompt("enter the grade"));
 }else{
     console.log("You received an F");
 }
+
+// TODO 
+// work on number ???
