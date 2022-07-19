@@ -14,6 +14,7 @@
 # # Function call
 # is_even(100)
  
+# true 
 
 # Example
 
@@ -30,7 +31,14 @@
 
 # keep_tally(1, 2, 3, 4, 5, 6, 7)
  
-
+# answer 
+# 1
+# 2
+# 3
+# 4
+# 5
+# 6
+# 7
 # Example
 
 # The following example uses "keyword arguments"
@@ -44,9 +52,17 @@
 
 # keep_tally(score_one=1, score_two="2.0", score_three="100%")
  
-
+# ('score_one', 1)
+# ('score_two', '2.0')
+# ('score_three', '100%')
 # Question
 
 # The IRS uses a progressive marginal tax system. Read the following article on marginal tax brackets (Links to an external site.). Use the tax bracket information within the article in order to write a function named calculate_marginal_tax_2022() which computes and returns the marginal tax for 2022.
 
 # Calculate the total tax for an individual earning $50,000.
+
+# an = (22 * 50000) / 100
+# print(an)
+# an = an + 4807.50
+# print(an)
+# 15807.5
