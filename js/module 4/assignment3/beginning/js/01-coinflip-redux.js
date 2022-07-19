@@ -8,3 +8,26 @@
 
 
 // alt+z --warap 
+
+let coinFlip;
+let flag = true;
+let times 
+//check enter number
+while(flag){
+    times  = parseInt(prompt('how many times to play this tail and heads game'));
+    // IS NOT A NUMBER 
+    if(!isNaN(times)){
+        flag = false;
+    }
+}
+for(let i = 0; i <= times; i++){
+    coinFlip = Math.round(Math.random());
+    if (coinFlip === 0) {
+        document.write('Heads');
+    } else {
+        document.write('Tails');
+    }
+    document.write('<br/>')
+}
+
+// TPDO : CHECL flag -DONE WORKING
