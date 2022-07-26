@@ -14,3 +14,52 @@
 // Create a conditional statement that checks the user’s choice in relation to the computer’s choice. Once a winner is defined, display a message within an alert box indicating who the winner is.
 // What if the result ends in a tie? Figure out how to handle that as well.
 // What if the user enters something other than rock, paper, or scissors into the prompt? Figure out how to handle that as wel
+
+
+
+let userChoice = Number(prompt('enter 0 for scissors, 1 for rocl and 2 for paper'))
+let compChoic = Math.floor(Math.random() * 3);
+console.log(compChoic)
+console.log("direction enter 0 for scissors, 1 for rocl and 2 for paper")
+
+switch (userChoice) {
+    case 0:
+        if (compChoic == 0) {
+            console.log("sciec and scisor tie")
+        } else if (compChoic == 1) {
+            console.log(`you loos computer choice is ${compChoic} and your choice is ${userChoice} `)
+        } else {
+            console.log(`you win computer choice is ${compChoic} and your choice is ${userChoice}`)
+        }
+        break
+    case 1:
+        if (compChoic == 0) {
+            console.log(`you win computer choice is ${compChoic} and your choice is ${userChoice}`)
+        } else if (compChoic == 1) {
+            console.log(`you tie computer choice is ${compChoic} and your choice is ${userChoice} `)
+        } else {
+            console.log(`you loose computer choice is ${compChoic} and your choice is ${userChoice}`)
+        }
+        break
+
+    case 2:
+        if (compChoic == 0) {
+            console.log(`you loose computer choice is ${compChoic} and your choice is ${userChoice}`)
+        } else if (compChoic == 1) {
+            console.log(`you win computer choice is ${compChoic} and your choice is ${userChoice} `)
+        } else {
+            console.log(`you tie computer choice is ${compChoic} and your choice is ${userChoice}`)
+        }
+        break
+
+    default:
+        console.log("you enterd not defined")
+
+}
+
+
+
+
+
+// reference
+// https://www.w3resource.com/javascript-exercises/javascript-array-exercise-35.php

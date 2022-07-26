@@ -65,6 +65,49 @@
 //STEP 4
 // Write a function called findModulus() that accepts two numbers. Within the function write a statement that returns the modulus of the first and second parameters. It should log a string like "2 is the modulus of 4 and 10."
 
+//todo later
 
 //STEP 5
 // Create a JavaScript function that accepts a certain amount of numbers as parameters. Those numbers should be collected using a prompt and the numbers should be delimited by commas. Once the values are collected, find the sum of all of the numbers combined. You will need to use a function, loop, arguments object, and several type conversion global functions to accomplish this task.
+
+// first solution
+// let num;
+// function sumOfNumbers(num){
+
+//     let sum = 0;
+//     for (let i = 0; i < arguments.length; i++) {
+//         sum += arguments[i];
+//      }
+//      console.log(sum)
+//     return sum;
+
+// }
+
+// // num = prompt('enter numbers with comma seprated')
+// // num = (3, 4,5,7) it has () not[]
+
+// let result = sumOfNumbers(3,4,5,6); // it is for given numbers
+// console.log(result)
+// console.log(`sum of the numbers entered is ${result}`)
+
+// second solution
+let num;
+function sumOfNumbers(num){
+
+    let sum = 0;
+    for (let i = 0; i < arguments.length; i++) {
+        sum += arguments[i];
+     }
+     console.log(sum)
+    return sum;
+
+}
+
+num = prompt('enter number comma seperated')
+console.log(num.split(','))
+// let result = sumOfNumbers(num.split(','));
+// console.log(result)
+// console.log(`sum of the numbers entered is ${result}`)
+
+//todo 
+// extract number 
