@@ -20,7 +20,7 @@
 let userChoice = Number(prompt('enter 0 for scissors, 1 for rocl and 2 for paper'))
 let compChoic = Math.floor(Math.random() * 3);
 console.log(compChoic)
-console.log("direction enter 0 for scissors, 1 for rocl and 2 for paper")
+console.log("direction enter 0 for scissors, 1 for rock and 2 for paper")
 
 switch (userChoice) {
     case 0:
@@ -63,3 +63,6 @@ switch (userChoice) {
 
 // reference
 // https://www.w3resource.com/javascript-exercises/javascript-array-exercise-35.php
+
+// note 
+// it is working but refactor it make it better 

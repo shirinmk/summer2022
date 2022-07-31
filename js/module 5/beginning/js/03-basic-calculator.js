@@ -1,4 +1,5 @@
 // IMPORT THE MODULE
+import {add, sub, div, multi} from "./modules/calculator.js";
 
 // COLLECT NUMBER 1, NUMBER 2, AND OPERATION FROM THE USER
 
@@ -13,3 +14,33 @@
 // Use a switch statement to evaluate the operation parameter being passed in. Depending on what it is, perform that operation by calling the appropriate function from the module.
 // Display the result of the calculation within an alert.
 // Figure out how to make it so that if the user doesn’t enter either add, subtract, multiply, or divide, they are displayed an alert message telling them that. Then you’ll have to rerun the application so that the application asks the user for the numbers and operation once more. You’ll have to add this functionality within a do while loop similarly how the labs were done in the previous lecture.
+
+// DEFINE GOLOBAL VARIABLE
+let firstNum = Number(prompt('Enter the first number'));
+//CHECK USER ENTER NUMBER
+let secNum = Number(prompt('Enter the second number'));
+//CHECK USER ENTER NUMBER
+let operation = prompt("What type of operation(+,-,*,/)")
+
+switch(operation){
+    case "+":
+        console.log(`${firstNum} + ${secNum} = ${add(firstNum,secNum)}`);
+        alert(`${firstNum} + ${secNum} = ${add(firstNum,secNum)}`)
+        break;
+    case "-":
+        console.log(`${firstNum} - ${secNum} = ${sub(firstNum,secNum)}`);
+        alert(`${firstNum} - ${secNum} = ${sub(firstNum,secNum)}`)
+        break;
+    case "/":
+        console.log(`${firstNum} / ${secNum} = ${div(firstNum,secNum)}`);
+        alert(`${firstNum} / ${secNum} = ${div(firstNum,secNum)}`)
+        break;
+    case "*":
+        console.log(`${firstNum} * ${secNum} = ${multi(firstNum,secNum)}`);
+        alert(`${firstNum} * ${secNum} = ${multi(firstNum,secNum)}`)
+        break;
+}
+
+
+//TODO
+// CHECK FOR CORRECT VALUE ENTER USER??
